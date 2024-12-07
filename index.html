@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="resume">
+            <fieldset class="width-form">
+                <legend>Personal Information</legend>
+                <label for="">Name:</label>
+                <input id="text" type="text" required> <br>
+                <label for="">Age:</label>
+                <input id="age1" type="number" required> <br>
+                <label for="">Phone:</label>
+                <input id="phone1" type="number" required> <br>
+                <label for="">Email:</label>
+                <input id="email" type="text" placeholder="abc@gmail.com"  required> <br>
+                <label for="">Exp:</label>
+                <input id="exper" type="text"  required> <br>
+            </fieldset>
+            <fieldset  class="width-form2">
+                <legend>Education</legend>
+                <textarea name="text" rows="13" cols="20" id="education"></textarea>
+            </fieldset>
+            <fieldset  class="width-form2">
+                <legend>Skill</legend>
+                <textarea name="skill" id="skill" rows="13" cols="20" placeholder="Add Skill seprated by coma." ></textarea>
+            </fieldset>
+            <fieldset  class="width-form">
+                <legend>Contact</legend>
+                <label for="">Address:</label>
+                <input id="address1" type="text" ><br>
+                <label for="">Home No:</label>
+                <input id="Home1" type="text" ><br>
+                
+            </fieldset>
+           
+            <div class="b">
+                <button class="btn" >Submit</button>
+            </div>
+            <div id="resume-genrate">
+                <div id="img-div"></div>
+
+
+              <!-- // Display form -->
+
+                <div id="main">
+                    <div id="top">
+                        <h1>Resume</h1>
+                        <p><strong>Web Developer</strong></p>
+                    
+            
+            
+                    <div id="profile-text">
+                        <h1 class="headind-left">Personal Information</h1>
+                        <p class="information" id="name"><strong >Name:</strong></p>
+                        <p class="information" id="age"><strong>Age: </strong></p>
+                        <p class="information" id="phone"><strong>Phone: </strong></p>
+                        <p class="information" id="email1"><strong>Email: </strong></p>
+                        <p class="information" id="exp" ><strong>Experience: </strong></p>
+                        
+                    </div>
+                </div>
+                <div id="education">
+                    <div id="education-text">
+                        <h1 class="headind-left">Education</h1>
+                        <p class="information" id="education1"></p>
+                    </div> 
+                </div>
+                <div id="Skills">
+                    <div id="exp-text">
+                        <div id="skills-info">
+                            <h1 class="headind-left">Skills</h1>
+            
+                            <ul>
+                                <li class="information" id="skill1"></li>
+                            </ul>
+            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="contact">
+                    <div id="contact-info">
+                        <h1 class="headind-left">Contact</h1>
+                        <h4 class="information">Home No:</h4>
+                        <p class="information" id="home"></p>
+                        <p class="information" id="address"></p>
+                    </div>
+                </div>
+                <div >&#174; Made By Tanzeel </div>
+            </div>
+          
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+ 
+</body>
+</html>
